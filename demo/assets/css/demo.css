@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: normal;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
+}
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: bold;
+  src: local("YuGothic-Bold"), local("Yu Gothic");
+}
+html {
+  font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+.get-color > li {
+  border: 1px solid #000;
+  display: inline-block;
+  height: 2rem;
+  width: 2em;
+}
+.get-color__base {
+  background-color: #fff;
+}
+.get-color__font {
+  background-color: #222;
+}
+.get-color__main {
+  background-color: #345;
+}
+.get-color__sub {
+  background-color: #980;
+}
+.get-color__strong {
+  background-color: #922;
+}
+.get-color__link {
+  background-color: #069;
+}
+
+.get-color-inverse {
+  background: #222;
+  padding: 2rem;
+}
+.get-color-inverse > li {
+  display: inline-block;
+  height: 2rem;
+  width: 2em;
+}
+.get-color-inverse__base {
+  border: 1px solid #fff;
+  background-color: #222;
+}
+.get-color-inverse__font {
+  background-color: #fff;
+}
+.get-color-inverse__main {
+  background-color: #678;
+}
+.get-color-inverse__sub {
+  background-color: #650;
+}
+.get-color-inverse__strong {
+  background-color: #c44;
+}
+.get-color-inverse__link {
+  background-color: #08b;
+}
+
+.font-family__monospace {
+  font-family: Monaco, "Courier New", Courier, monospace;
+  margin: 1rem 0 0;
+}
+.font-family__monospace p {
+  font-size: 250%;
+  margin: 0;
+}
+.font-family__serif {
+  font-family: "Times New Roman", serif;
+  margin: 1rem 0 0;
+}
+.font-family__serif p {
+  font-size: 250%;
+  margin: 0;
+}
+.font-family__sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1rem 0 0;
+}
+.font-family__sans-serif p {
+  font-size: 250%;
+  margin: 0;
+}
+.font-family__mincho {
+  font-family: YuMincho, "Yu Mincho", serif;
+  margin: 1rem 0 0;
+}
+.font-family__mincho p {
+  font-size: 250%;
+  margin: 0;
+}
+.font-family__gothic {
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+  margin: 1rem 0 0;
+}
+.font-family__gothic p {
+  font-size: 250%;
+  margin: 0;
+}
+
+.font-size__mn {
+  font-size: 8px;
+}
+.font-size__xs {
+  font-size: 10px;
+}
+.font-size__sm {
+  font-size: 12px;
+}
+.font-size__rg {
+  font-size: 16px;
+}
+.font-size__md {
+  font-size: 24px;
+}
+.font-size__lg {
+  font-size: 32px;
+}
+.font-size__xl {
+  font-size: 48px;
+}
+.font-size__2x {
+  font-size: 56px;
+}
+.font-size__3x {
+  font-size: 64px;
+}
+
+.gradient > li {
+  display: block;
+  height: 8rem;
+  width: 8rem;
+}
+.gradient__main {
+  background-image: linear-gradient(to bottom, #ffffff, #cccccc);
+}
+
+.line-height__mn {
+  line-height: 0.75;
+}
+.line-height__xs {
+  line-height: 1;
+}
+.line-height__sm {
+  line-height: 1.25;
+}
+.line-height__rg {
+  line-height: 1.5;
+}
+.line-height__md {
+  line-height: 1.75;
+}
+.line-height__lg {
+  line-height: 2;
+}
+
+.width {
+  overflow-x: scroll;
+  max-width: 100%;
+}
+.width > li {
+  background: #ddd;
+}
+.width__mn {
+  width: 320px;
+}
+.width__xs {
+  width: 360px;
+}
+.width__sm {
+  width: 480px;
+}
+.width__rg {
+  width: 768px;
+}
+.width__md {
+  width: 960px;
+}
+.width__lg {
+  width: 1280px;
+}
+.width__xl {
+  width: 1600px;
+}
+.width__mx {
+  width: 1920px;
+}
+
+.rem__8 {
+  font-size: 0.5rem;
+}
+.rem__16 {
+  font-size: 1rem;
+}
+.rem__24 {
+  font-size: 1.5rem;
+}
+.rem__32 {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=demo.css.map */
