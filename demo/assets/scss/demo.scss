@@ -1,0 +1,163 @@
+@use '../../../sass-utils/_all' as *;
+
+html {
+  font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+$color-names: (
+  base,
+  font,
+  main,
+  sub,
+  strong,
+  link,
+);
+
+.get-color {
+  > li {
+    border: 1px solid #000;
+    display: inline-block;
+    height: 2rem;
+    width: 2em;
+  }
+  @each $color-name in $color-names {
+    &__#{$color-name} {
+      background-color: get-color($color-name);
+    }
+  }
+}
+
+.get-color-inverse {
+  background: get-color-inverse(base);
+  padding: 2rem;
+  > li {
+    display: inline-block;
+    height: 2rem;
+    width: 2em;
+  }
+  @each $color-name in $color-names {
+    &__#{$color-name} {
+      @if $color-name == 'base' {
+        border: 1px solid #fff;
+      }
+      background-color: get-color-inverse($color-name);
+    }
+  }
+}
+
+$font-families: (
+  monospace,
+  serif,
+  sans-serif,
+  mincho,
+  gothic,
+);
+
+.font-family {
+  @each $font-family in $font-families {
+    &__#{$font-family} {
+      font-family: get-font-family($font-family);
+      margin: 1rem 0 0;
+      p {
+        font-size: 250%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+$font-sizes: (
+  mn,
+  xs,
+  sm,
+  rg,
+  md,
+  lg,
+  xl,
+  2x,
+  3x,
+);
+
+.font-size {
+  @each $font-size in $font-sizes {
+    &__#{$font-size} {
+      font-size: get-font-size($font-size);
+    }
+  }
+}
+
+$gradient-names: (
+  main,
+);
+
+.gradient {
+  > li {
+    display: block;
+    height: 8rem;
+    width: 8rem;
+  }
+  @each $gradient-name in $gradient-names {
+    &__#{$gradient-name} {
+      background-image: get-gradient($gradient-name);
+    }
+  }
+}
+
+$line-height-names: (
+  mn,
+  xs,
+  sm,
+  rg,
+  md,
+  lg,
+);
+
+.line-height {
+  @each $line-height-name in $line-height-names {
+    &__#{$line-height-name} {
+      line-height: get-line-height($line-height-name);
+    }
+  }
+}
+
+$width-names: (
+  mn,
+  xs,
+  sm,
+  rg,
+  md,
+  lg,
+  xl,
+  mx,
+);
+
+.width {
+  overflow-x: scroll;
+  max-width: 100%;
+  > li {
+    background: #ddd;
+  }
+  @each $width-name in $width-names {
+    &__#{$width-name} {
+      width: get-width($width-name);
+    }
+  }
+}
+
+$pxs: (
+  8, 16, 24, 32,
+);
+
+.rem {
+  @each $px in $pxs {
+    &__#{$px} {
+      // font-size: convert-px-into-rem($px * 1px, 16px);
+      font-size: rem($px * 1px, 16px);
+    }
+  }
+};
