@@ -1,11 +1,12 @@
 @use '../functions/_all' as *;
+@use 'sass:math' as math;
 
 @mixin aspect-ratio-flexible($width, $height) {
   position: relative;
   &::before {
     content: '';
     float: left;
-    padding-top: ($height / $width) * 100%;
+    padding-top: math.div($height, $width) * 100%;
   }
   &::after {
     content: '';
